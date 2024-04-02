@@ -1,0 +1,18 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%"
+                        gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="rgba(252, 237, 163, 1)"/>
+            <stop offset="1" stop-color="rgba(59, 241, 241, 1)"/>
+        </linearGradient>
+        <clipPath id="re">
+            <rect x="0" y="0" width="100%" height="100%" rx="28" ry="28"/>
+            <rect x=""/>
+        </clipPath>
+    </defs>
+    <rect x="0" y="0" rx="28" ry="28" width="100%" height="100%"
+          stroke="url(#lg)"
+          stroke-width="2"
+          fill="none"
+          clip-path="url(#re)"/>
+</svg>

@@ -1,0 +1,45 @@
+@font-face{
+    font-family: "Inter";
+    src: url("./inter-ido.woff2");
+}
+@font-face{
+    font-family: "futura";
+    src: url("./Futura.ttc");
+}
+@font-face{
+    font-family: "AllertaStencil";
+    src: url("./AllertaStencil-Regular.ttf");
+}
+@font-face{
+    font-family: "PlusJakartaSans";
+    src: url("./PlusJakartaSans-Regular.ttf");
+}
+@font-face{
+    font-family: "PlusJakartaSans-SemiBold";
+    src: url("./PlusJakartaSans-SemiBold.ttf");
+}
+@font-face{
+    font-family: "PlusJakartaSans-Medium";
+    src: url("./PlusJakartaSans-Medium.ttf");
+}
+/*html body{
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+}*/
+.Inter{
+    font-family: "Inter", serif;
+}
+.futura{
+    font-family: "futura", serif;
+}
+.AllertaStencil{
+    font-family: "AllertaStencil", serif;
+}
+.PlusJakartaSans{
+    font-family: "PlusJakartaSans", serif;
+}
+.PlusJakartaSans-Medium{
+    font-family: "PlusJakartaSans-Medium", serif;
+}
+.PlusJakartaSans-SemiBold{
+    font-family: "PlusJakartaSans-SemiBold", serif;
+}

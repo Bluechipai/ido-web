@@ -1,0 +1,2739 @@
+{
+  "timestamp": "2022-11-07 11:31:41",
+  "node": "https://apis-sj.ankr.com/4819f8b2e4a2491da76b28b9d3aaf96b/c3b85bea4a6b3c020eec29cacb6e5f21/binance/full/test",
+  "browser": "https://testnet.bscscan.com/tx/",
+  "chainid": 97,
+  "chainName": "BSC Testnet",
+  "chainSymbol": "BNB",
+  "chainSymbolDecimals": 18,
+  "contracts": {
+    "SatoriToken": {
+      "address": "0x4F9A245F6C8cf8c1001cdB08Dc7439e33B4f50d0",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "name_",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "symbol_",
+              "type": "string"
+            },
+            {
+              "internalType": "uint8",
+              "name": "decimals_",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "supply_",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "spender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Approval",
+          "type": "event",
+          "signature": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event",
+          "signature": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+        },
+        {
+          "inputs": [],
+          "name": "name",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x06fdde03"
+        },
+        {
+          "inputs": [],
+          "name": "symbol",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x95d89b41"
+        },
+        {
+          "inputs": [],
+          "name": "decimals",
+          "outputs": [
+            {
+              "internalType": "uint8",
+              "name": "",
+              "type": "uint8"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x313ce567"
+        },
+        {
+          "inputs": [],
+          "name": "totalSupply",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x18160ddd"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "balanceOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x70a08231"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "transfer",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xa9059cbb"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "spender",
+              "type": "address"
+            }
+          ],
+          "name": "allowance",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xdd62ed3e"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "spender",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "approve",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x095ea7b3"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "transferFrom",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x23b872dd"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "spender",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "addedValue",
+              "type": "uint256"
+            }
+          ],
+          "name": "increaseAllowance",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x39509351"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "spender",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "subtractedValue",
+              "type": "uint256"
+            }
+          ],
+          "name": "decreaseAllowance",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xa457c2d7"
+        }
+      ],
+      "decimals": 18
+    },
+    "SatoriDAO": {
+      "address": "0x5786594125308A8C88411C9AD955303D0D38A854",
+      "abi": [
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "signerId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "signer",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "approveNumber",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "enum SatoriDAO.ProposalStatus",
+              "name": "status",
+              "type": "uint8"
+            }
+          ],
+          "name": "Approved",
+          "type": "event",
+          "signature": "0xf522c5c39f13d9adba7faf70d18a1ff7c1960a11fa87b8baf0f440a4b260255c"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "BaseRateProposalAdded",
+          "type": "event",
+          "signature": "0xf23f32a11867377a63fe7a9ca9c3dec15f22c9783f7feed83c85aef1e973073a"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "BorrowAvailableLimitRateProposalAdded",
+          "type": "event",
+          "signature": "0x7e3ac852c408f7ccb20e4281ce3bc6171be1121b564a2e7179a0c5775b9029ca"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "min",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "max",
+              "type": "uint256"
+            }
+          ],
+          "name": "CLeverageProposalAdded",
+          "type": "event",
+          "signature": "0x8f8af3f6b10ed4bd2dc3e9d7d44f6bc080c7b39cf57ea640e4e15dff950519d7"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "DepositLockDurationProposalAdded",
+          "type": "event",
+          "signature": "0xae6199066293a08b661962e53f780778f0c556e27917aad0b61606be2a72aa6d"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "loanRatio",
+              "type": "uint256"
+            }
+          ],
+          "name": "LoanRatioProposalAdded",
+          "type": "event",
+          "signature": "0xfb23139b63dfabc51e82004b758be7d8fff28da3f062f6a936155e764bddaf0f"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "marginRate",
+              "type": "uint256"
+            }
+          ],
+          "name": "MarginRateProposalAdded",
+          "type": "event",
+          "signature": "0xc93a0256e38150f901e61b7090c217a721c514fbd2b3753fdc7455f4cfa5a6f3"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "MarginalInterestRateProposalAdded",
+          "type": "event",
+          "signature": "0xa5e043f146426a72fa568a0843a44001c68d63983d47d37922525299d7e6eb3c"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "OnePLProposalAdded",
+          "type": "event",
+          "signature": "0x19193ac837d4802afec8411d1dc8f7ff4900a05a4c75687bccf9dafad8a3c6af"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event",
+          "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "pairsData",
+              "type": "string"
+            }
+          ],
+          "name": "PairProposalAdded",
+          "type": "event",
+          "signature": "0x749a673d028563006a8d6ce553a49693f91eff07bd168846c580d76af8a84971"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "enum SatoriDAO.ProposalType",
+              "name": "proposalType",
+              "type": "uint8"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "publisher",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "stakeAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "expiredAt",
+              "type": "uint256"
+            }
+          ],
+          "name": "ProposalAdded",
+          "type": "event",
+          "signature": "0xb3250286c60b37364d0f7dc44224ae72f14e8cbc558c81fc4bd3c4e1b15742cc"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "voter",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "Redeemed",
+          "type": "event",
+          "signature": "0xa18626381edd3d7a115c4a09f678bb79665034a541affcdba9fe65a1d3d107ee"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "ReserveFactorProposalAdded",
+          "type": "event",
+          "signature": "0xfdcca38d50daca98bfd57494d1c5ab61253a077973991ad07b8f16631da4f83e"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldSigner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newSigner",
+              "type": "address"
+            }
+          ],
+          "name": "SignerTransfered",
+          "type": "event",
+          "signature": "0x8b4cc628f306c93e70d712c0363badd66c67b61ade7437154e3e6d593b115fce"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "TokenHolderSnapshotProposalAdded",
+          "type": "event",
+          "signature": "0x9fd1257baf0c0577f6d18841dc231286795ad5304407f4626dfe91067c27e1e0"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "TotalPLProposalAdded",
+          "type": "event",
+          "signature": "0x824efed17dea2179880a0f4322a5cf1603045060a28c032a84d3541fb17320bc"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "takerFee",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "makerFee",
+              "type": "uint256"
+            }
+          ],
+          "name": "TxFeesProposalAdded",
+          "type": "event",
+          "signature": "0x140b00178c3dae5150455da1f74f3692967a5819be20282c2a7272d4cd9e9575"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "startTime",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "endTime",
+              "type": "uint256"
+            }
+          ],
+          "name": "VolumeTradeSnapshotProposalAdded",
+          "type": "event",
+          "signature": "0x4c115c4867d64250ea17ce512ba36a27f8e7e1b855a09b335ce47afe62687884"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "voter",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tickets",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "isAgree",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "isCompliant",
+              "type": "bool"
+            }
+          ],
+          "name": "Voted",
+          "type": "event",
+          "signature": "0xc46f879f110615cad5f25169232395c4474e7407043d4e3af3b49701a1d3cda6"
+        },
+        {
+          "inputs": [],
+          "name": "Denominator",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x28f0a829"
+        },
+        {
+          "inputs": [],
+          "name": "Duration_Day_10",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x2de29f47"
+        },
+        {
+          "inputs": [],
+          "name": "Duration_Day_3",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x2c8fba6d"
+        },
+        {
+          "inputs": [],
+          "name": "Duration_Day_5",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xc739b32b"
+        },
+        {
+          "inputs": [],
+          "name": "Duration_Day_7",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x2935dfb7"
+        },
+        {
+          "inputs": [],
+          "name": "RequiredTickets",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x48cec2f9"
+        },
+        {
+          "inputs": [],
+          "name": "SignerRequiredNumber",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xe8c70e37"
+        },
+        {
+          "inputs": [],
+          "name": "SignerTotalNumber",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xe11c2a94"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "baseRateOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xcc229ddf"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "borrowAvailableLimitRateOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x3e095934"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "cLOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "min",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "max",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x52e7f05e"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "depositLockDurationOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x289351e9"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "loanRatioOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x814d9308"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "marginRateOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x986bddf2"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "marginalInterestRateOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xc0569be3"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "onePLOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xa2239d5b"
+        },
+        {
+          "inputs": [],
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x8da5cb5b"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "pairOfproposals",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "pairsData",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x184c9d59"
+        },
+        {
+          "inputs": [],
+          "name": "proposalIndex",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x5977e0f2"
+        },
+        {
+          "inputs": [],
+          "name": "proposalStakeAmount",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xc1789c1b"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "name": "proposalStakeBalances",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x1369c52a"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "proposals",
+          "outputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalType",
+              "name": "proposalType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "enum SatoriDAO.ProposalStatus",
+              "name": "status",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "publisher",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "agreedTicket",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "disAgreedTicket",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "approveNumber",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "stakeAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isCompliant",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "valid",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expiredAt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "createAt",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x013cf08b"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "name": "proposalsTickets",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xb0443ef2"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "name": "proposalsVoted",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xc0184cf8"
+        },
+        {
+          "inputs": [],
+          "name": "renounceOwnership",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x715018a6"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "reserveFactorOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xca5b87f1"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "signRecords",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x280afd51"
+        },
+        {
+          "inputs": [],
+          "name": "signerIdIndex",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x02738f8f"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "name": "signerIds",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x4cf6c60f"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "signerList",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x577ed7e1"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "name": "signers",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x736c0d5b"
+        },
+        {
+          "inputs": [],
+          "name": "ticketToken",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xd5ed4d5a"
+        },
+        {
+          "inputs": [],
+          "name": "tokenDecimals",
+          "outputs": [
+            {
+              "internalType": "uint8",
+              "name": "",
+              "type": "uint8"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x3b97e856"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "tokenHolderOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x0d3d95b7"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "totalPLOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x8b3b2054"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "transferOwnership",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xf2fde38b"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "txFeeOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "takerFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "makerFee",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x3ad94d13"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "volumeTradeOfproposals",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "endTime",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x7ec19a30"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_token",
+              "type": "address"
+            },
+            {
+              "internalType": "address[]",
+              "name": "_signers",
+              "type": "address[]"
+            }
+          ],
+          "name": "initialize",
+          "outputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "payable": true,
+          "signature": "0x946d9204"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newSigner",
+              "type": "address"
+            }
+          ],
+          "name": "signerTransfer",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x8e148d6c"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "setProposalStakeAmount",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x026fed74"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "_durations",
+              "type": "uint256[]"
+            }
+          ],
+          "name": "setProposalDurations",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x744b8798"
+        },
+        {
+          "inputs": [],
+          "name": "getSignerList",
+          "outputs": [
+            {
+              "internalType": "address[]",
+              "name": "",
+              "type": "address[]"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x2a1bda69"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "getVoteInfo",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x0d524bc6"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "getApproveInfo",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x1fec86d5"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            }
+          ],
+          "name": "getDuration",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xbbd964f4"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "tickets",
+              "type": "uint256"
+            }
+          ],
+          "name": "getAmount",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x9980ec86"
+        },
+        {
+          "inputs": [],
+          "name": "getMinRequiredTickets",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xcb62f29b"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tickets",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isAgree",
+              "type": "bool"
+            }
+          ],
+          "name": "vote",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x6a18ff7a"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            }
+          ],
+          "name": "redeemToken",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x013054c2"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "proposalId",
+              "type": "uint256"
+            }
+          ],
+          "name": "approve",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xb759f954"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "pairsData",
+              "type": "string"
+            }
+          ],
+          "name": "pairProposal",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xd059078b"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "OnePositionLimit",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xf47cf2ed"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "TotalPositionLimit",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xc1fac2b1"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "min",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "max",
+              "type": "uint256"
+            }
+          ],
+          "name": "contractLeverage",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x93cdb325"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "takerFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "makerFee",
+              "type": "uint256"
+            }
+          ],
+          "name": "transactionFees",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xe601cf08"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "marginRate",
+              "type": "uint256"
+            }
+          ],
+          "name": "maintainMarginRate",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x35440755"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "loanRatio",
+              "type": "uint256"
+            }
+          ],
+          "name": "loanRatioProposal",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x548c1746"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "baseRate",
+              "type": "uint256"
+            }
+          ],
+          "name": "baseRateProposal",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x8b6bbea3"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "marginalInterestRate",
+              "type": "uint256"
+            }
+          ],
+          "name": "marginalInterestRateProposal",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xcc2285c7"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "reserveFactor",
+              "type": "uint256"
+            }
+          ],
+          "name": "reserveFactorProposal",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x705834cb"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowAvailableLimitRate",
+              "type": "uint256"
+            }
+          ],
+          "name": "borrowAvailableLimitRateProposal",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x5344904c"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lockDuration",
+              "type": "uint256"
+            }
+          ],
+          "name": "updateDepositLockDuration",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xe94ba58c"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            }
+          ],
+          "name": "featureProposal",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x8f23528a"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            }
+          ],
+          "name": "otherConfigProposal",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x0364e11a"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "tokenHolderSnapshot",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x99ac0029"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum SatoriDAO.ProposalDuration",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pairId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "endTime",
+              "type": "uint256"
+            }
+          ],
+          "name": "volumeTradeSnapshot",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xb8e02fd8"
+        }
+      ]
+    },
+    "Admin": {
+      "address": "0x575770a2cA75Bb50E658d1Ac516c237fF8f95fa5",
+      "abi": [
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event",
+          "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+        },
+        {
+          "inputs": [],
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x8da5cb5b"
+        },
+        {
+          "inputs": [],
+          "name": "renounceOwnership",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x715018a6"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "transferOwnership",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xf2fde38b"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract TransparentUpgradeableProxy",
+              "name": "proxy",
+              "type": "address"
+            }
+          ],
+          "name": "getProxyImplementation",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0x204e1c7a"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract TransparentUpgradeableProxy",
+              "name": "proxy",
+              "type": "address"
+            }
+          ],
+          "name": "getProxyAdmin",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true,
+          "signature": "0xf3b7dead"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract TransparentUpgradeableProxy",
+              "name": "proxy",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "newAdmin",
+              "type": "address"
+            }
+          ],
+          "name": "changeProxyAdmin",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x7eff275e"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract TransparentUpgradeableProxy",
+              "name": "proxy",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "implementation",
+              "type": "address"
+            }
+          ],
+          "name": "upgrade",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x99a88ec4"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract TransparentUpgradeableProxy",
+              "name": "proxy",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "implementation",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "name": "upgradeAndCall",
+          "outputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "payable": true,
+          "signature": "0x9623609d"
+        }
+      ]
+    },
+    "Proxy": {
+      "address": "0x0D843AA68dBc2b8eAC85F12375bfe666bd932692",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_logic",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "admin_",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "_data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "constructor",
+          "payable": true,
+          "signature": "constructor"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "previousAdmin",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newAdmin",
+              "type": "address"
+            }
+          ],
+          "name": "AdminChanged",
+          "type": "event",
+          "signature": "0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "implementation",
+              "type": "address"
+            }
+          ],
+          "name": "Upgraded",
+          "type": "event",
+          "signature": "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b"
+        },
+        {
+          "stateMutability": "payable",
+          "type": "fallback",
+          "payable": true
+        },
+        {
+          "stateMutability": "payable",
+          "type": "receive",
+          "payable": true
+        },
+        {
+          "inputs": [],
+          "name": "admin",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "admin_",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xf851a440"
+        },
+        {
+          "inputs": [],
+          "name": "implementation",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "implementation_",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x5c60da1b"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newAdmin",
+              "type": "address"
+            }
+          ],
+          "name": "changeAdmin",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x8f283970"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newImplementation",
+              "type": "address"
+            }
+          ],
+          "name": "upgradeTo",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x3659cfe6"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newImplementation",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "name": "upgradeToAndCall",
+          "outputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "payable": true,
+          "signature": "0x4f1ef286"
+        }
+      ]
+    }
+  }
+}

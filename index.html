@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BlueChip AI</title>
+    <link rel="stylesheet" href="./public/font.css">
+</head>
+<body>
+<div id="root" style="font-size: 14px;"></div>
+<script type="module" src="/src/main.tsx"></script>
+<script>
+    /*function initViewport() {
+        const width = 375;
+        const scale = window.innerWidth / width
+        let meta = document.querySelector('meta[name=viewport]')
+        let content = `width=${width}, init-scale=${scale}, user-scalable=no`
+        if (!meta) {
+            meta = document.createElement('meta')
+            meta.setAttribute('name', 'viewport')
+            document.head.appendChild(meta)
+        }
+        meta.setAttribute('content', content)
+    }
+
+    initViewport()*/
+    function resize() {
+        const w_width = window.innerWidth;
+        document.documentElement.style.fontSize = w_width / 1920 * 100 + 'px';
+    }
+    window.addEventListener('resize', resize)
+    resize()
+</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  font-size: 0.14rem;
+  scroll-behavior: smooth;
+}
+#root {
+  font-family: PlusJakartaSans, PingFang SC, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: normal;
+  font-weight: 400;
+  color-scheme: light dark;
+  padding-bottom: 0.01rem;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: #fff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #fff;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border: none;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  &:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+button:hover {
+
+}
+button:focus,
+button:focus-visible {
+
+}
+
+input {
+  border: none;
+  outline: none;
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+.linerText{
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /*color: #fff;*/
+    /*background-color: #121716;*/
+  }
+  /*a:hover {*/
+  /*  color: #5DD796;*/
+  /*}*/
+  /*button {*/
+  /*  background-color: #f9f9f9;*/
+  /*}*/
+}
+a:hover {
+  color: #5DD796;
+}
+a:hover {
+  color: #5DD796;
+}
+
+@keyframes animation-infinite-x {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+input{
+  &::-webkit-input-placeholder {
+    color: rgba(0,0,0,0.57);
+  }
+
+  &::-moz-input-placeholder {
+    color: rgba(0,0,0,0.57);
+  }
+  &::-ms-input-placeholder {
+    color: rgba(0,0,0,0.57);
+  }
+}
+/*:root.dark input{*/
+/*  &::-webkit-input-placeholder {*/
+/*    color: #98A7C3;*/
+/*  }*/
+
+/*  &::-moz-input-placeholder {*/
+/*    color: #98A7C3;*/
+/*  }*/
+/*  &::-ms-input-placeholder {*/
+/*    color: #98A7C3;*/
+/*  }*/
+/*}*/
+@keyframes rotate-animate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.rotate-animate{
+  animation: rotate-animate 0.75s linear infinite;
+}
